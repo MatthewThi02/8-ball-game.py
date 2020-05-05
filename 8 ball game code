@@ -1,0 +1,24 @@
+from random import randint
+
+
+def main():
+    question = ask()
+    
+def ask():
+    question = input("Ask anything: ")
+    generate(question)
+    
+def generate(question):
+    choices = ['yes','no','maybe','back in nam','of course','By the nine never','oh helll nahhh','you know what just leave','I am just gonna yeet that away']
+    pick = randint(0,len(choices))
+    response = choices[pick]
+    if len(question) < 2:
+        print("that was not a question")
+    else:
+        print("you asked",question, "my answer is",response)
+    
+    
+    
+    
+    
+main()
